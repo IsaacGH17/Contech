@@ -75,9 +75,8 @@ export default function Sidebar() {
                                 key={index}
                                 href={item.href}
                                 onClick={() => setIsOpen(false)}
-                                className="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-white/10 transition-all duration-200 group relative overflow-hidden"
+                                className="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-300 hover:text-white hover:bg-slate-700 transition-all duration-200 group relative overflow-hidden outline-none focus:outline-none"
                             >
-                                <span className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-purple-600/0 to-blue-600/0 group-hover:from-blue-600/20 group-hover:via-purple-600/20 group-hover:to-blue-600/20 transition-all duration-300" />
                                 <i className={`bx ${item.icon} text-2xl relative z-10`}></i>
                                 <span className="font-medium relative z-10">{item.name}</span>
                             </Link>
